@@ -1,0 +1,32 @@
+ALGORITHM algo
+VAR
+a:STRING ;
+count:= 0:INTEGER;
+Word:STRING;
+countWord:=1 :INTEGER;
+BEGIN
+    read(a)
+    FOR i FROM 0 TO a.length-1 STEP DO
+    IF (a[i]='a' or
+    a[i]='e' or
+    a[i]='o' or
+    a[i]='u' or
+    a[i]='y' or
+    a[i]='i' or) THEN
+    count = count+1
+    END_IF
+    END_FOR
+    write (count);
+    write(a.length);
+
+    read(word)
+    FOR i FROM 0 TO word.length-1 STEP DO
+    IF (a[i]='') THEN
+        countWord = countWord + 1
+    END_IF
+    END_FOR
+    write(countWord);
+
+
+
+END
